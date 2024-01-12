@@ -20,14 +20,14 @@ export default function Component() {
     <MainBackground>
       <MainContainer>
 
-        <MainBanner/> {/* 재우 파트 */}
+        <MainBanner/> {/* 재우 파트 - 배너 이미지 영역*/}
 
-        <ContainerRow $gap="30px"> {/* 재우 파트 */}
+        <ContainerRow $gap="30px"> {/* 수혁 파트 - 버튼 영역*/}
           <ContractAnalyzeButton/>
           <ContractCreateButton/>
         </ContainerRow>
 
-        <MileageShopButton/>
+        <MileageShopButton/> {/* 수혁 파트 - 마일리지 샵 영역*/}
 
       </MainContainer>
     </MainBackground>
