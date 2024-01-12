@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const ButtonContainer = styled.div`
     position: relative;
-    width: 45rem;
+    width: ${props => props.$width || "45rem"};
     height: 150px;
     background: #122033;
     border-radius: 20px;
@@ -30,10 +30,10 @@ const Image = styled.img`
     height: 90px;
 `
 
-export default function Component() {
+export default function Component({$width}) {
 
     return (
-        <ButtonContainer>
+        <ButtonContainer $width={$width}>
             <TextHeader>마일리지 쇼핑하러 가기</TextHeader>
             <ShortcutContainer>
                 <Image src="/img/coins.png"/>
