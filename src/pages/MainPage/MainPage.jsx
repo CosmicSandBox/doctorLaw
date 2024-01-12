@@ -23,7 +23,7 @@ export default function Component() {
 
         <MainBanner /> {/* 재우 파트 - 배너 이미지 영역*/}
 
-        <ContainerRow $gap="30px"> {/* 수혁 파트 - 버튼 영역*/}
+        <ContainerRow $gap="80px"> {/* 수혁 파트 - 버튼 영역*/}
           <ContractAnalyzeButton />
           <ContractCreateButton />
         </ContainerRow>
