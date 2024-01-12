@@ -42,7 +42,9 @@ export default function Component() {
     return (
         <HeaderContainer>
             <Logo>
-                <img src="img/로고.svg" alt="로고" />
+                <StyledLink href="/">
+                    <img src="img/로고.svg" alt="로고" />
+                </StyledLink>
             </Logo>
             <MenuContainer>
                 <ContainerCenter>
