@@ -4,11 +4,18 @@ const HeaderContainer = styled.header`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: blue;
+    background: #122033;
     color: white;
 `;
 
 const Logo = styled.div`
+    width: 100px;
+    height: 50px;
+    padding-left: 20px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
 `
 
 const MenuContainer = styled.div`
@@ -22,9 +29,11 @@ const LoginContainer = styled.div`
 `
 
 export default function Component() {
-    return(
+    return (
         <HeaderContainer>
-            <Logo>로고 영역</Logo>
+            <Logo>
+                <img src="img/로고.svg" alt="로고" />
+            </Logo>
             <MenuContainer>
                 <p>딴메뉴1</p>
                 <p>딴메뉴2</p>
