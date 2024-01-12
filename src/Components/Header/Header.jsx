@@ -1,4 +1,5 @@
 import { styled } from 'styled-components';
+import ContainerCenter from '../Container/ContainerCenter';
 
 const HeaderContainer = styled.header`
     display: flex;
@@ -28,6 +29,15 @@ const LoginContainer = styled.div`
     flex-direction: row;
 `
 
+const Sizedbox = styled.div`
+   width: 20px;
+`
+
+const StyledLink = styled.a`
+    color: white;
+    text-decoration: none;
+`;
+
 export default function Component() {
     return (
         <HeaderContainer>
@@ -35,14 +45,25 @@ export default function Component() {
                 <img src="img/로고.svg" alt="로고" />
             </Logo>
             <MenuContainer>
-                <p>딴메뉴1</p>
-                <p>딴메뉴2</p>
-                <LoginContainer>
-                    <p>로그인</p>
-                    <p>|</p>
-                    <p>회원가입</p>
-                </LoginContainer>
+                <ContainerCenter>
+                    <StyledLink href="/analyze">계약서 분석</StyledLink>
+                </ContainerCenter>
+                <Sizedbox />
+                <ContainerCenter>
+                    <StyledLink href="/create">계약서 생성</StyledLink>
+                </ContainerCenter>
+                <Sizedbox />
+                <ContainerCenter>
+                    <LoginContainer>
+                        <StyledLink href="/login">로그인</StyledLink>
+                        <Sizedbox />
+                        <p>|</p>
+                        <Sizedbox />
+                        <StyledLink href="/signup">회원가입</StyledLink>
+                    </LoginContainer>
+                </ContainerCenter>
+                <Sizedbox />
             </MenuContainer>
         </HeaderContainer>
-    )
+    );
 };

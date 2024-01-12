@@ -5,7 +5,7 @@ import ContainerRow from '../../Components/Container/ContainerRow';
 import ContractAnalyzeButton from './Buttons/ContractAnalyzeButton';
 import ContractCreateButton from './Buttons/ContractCreateButton';
 import MileageShopButton from './Buttons/MileageShopButton';
-import Header from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
 
 const MainContainer = styled.div`
     display: flex;
