@@ -22,7 +22,7 @@ const TypeContainer = styled.div`
 `
 
 const ProgressBarWrapper = styled.div`
-    flex: 3; // 프로그레스 바 부분
+    flex: 5; // 프로그레스 바 부분
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +35,8 @@ const ContainerText = styled.div`
     justify-content: center;
     align-items: flex-end;
     box-sizing: border-box;
+    position: relative;
+    top: 30px;
 `;
 
 const ProgressBarContainer = styled.div`
@@ -63,8 +65,8 @@ position: relative;
 `;
 
 const PositionImage = styled.img`
-    width: 50px;
-    height: 50px; //
+    width: 70px;
+    height: 70px;
 `;
 
 export default function Component({ riskValue }) {
@@ -76,7 +78,7 @@ export default function Component({ riskValue }) {
             <TextHeader>3개의 조항이 위험해요!</TextHeader>
             <TypeContainer>
                 <ContainerText>
-                    <p style={{ fontWeight: 'bold' }}>안전</p>
+                    <p style={{ fontWeight: 'bold', fontSize: '20px' }}>안전</p>
                 </ContainerText>
                 <ProgressBarWrapper>
                     <ProgColumn>
@@ -89,7 +91,7 @@ export default function Component({ riskValue }) {
                     </ProgColumn>
                 </ProgressBarWrapper>
                 <ContainerText>
-                    <p style={{ fontWeight: 'bold' }}>위험</p>
+                    <p style={{ fontWeight: 'bold', fontSize: '20px' }}>위험</p>
                 </ContainerText>
             </TypeContainer>
         </BeigeContainer>
