@@ -14,11 +14,11 @@ const NoticeContainer = styled.div`
 export default function Component() {
   return (
     <ContainerColumn>
-      <ChoiceType/>
+      <ChoiceType />
       <NoticeContainer>
-        <HowItGoes/>
-        <AdMileageShop/>
-        <MileageShopButton $width="none"/>
+        <HowItGoes />
+        <AdMileageShop />
+        <MileageShopButton $width="none" />
       </NoticeContainer>
     </ContainerColumn>
   );
