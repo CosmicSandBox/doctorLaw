@@ -38,7 +38,7 @@ export default function Component(){
                 </TypeButton>
                 <TypeButton>
                     <Image $width="140px" $height="100px" src="/img/type/img.png"/>
-                    <ImageDescription>PDF로 등록</ImageDescription>
+                    <ImageDescription>이미지로 등록</ImageDescription>
                 </TypeButton>
             </TypeContainer>
         </BeigeContainer>
