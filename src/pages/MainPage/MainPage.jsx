@@ -5,7 +5,7 @@ import ContainerRow from '../../Components/Container/ContainerRow';
 import ContractAnalyzeButton from './Buttons/ContractAnalyzeButton';
 import ContractCreateButton from './Buttons/ContractCreateButton';
 import MileageShopButton from './Buttons/MileageShopButton';
-import Header from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
 
 const MainContainer = styled.div`
     display: flex;
@@ -21,14 +21,14 @@ export default function Component() {
     <MainBackground>
       <MainContainer>
 
-        <MainBanner /> {/* 재우 파트 - 배너 이미지 영역*/}
+        <MainBanner/> {/* 재우 파트 - 배너 이미지 영역*/}
 
         <ContainerRow $gap="80px"> {/* 수혁 파트 - 버튼 영역*/}
-          <ContractAnalyzeButton />
-          <ContractCreateButton />
+          <ContractAnalyzeButton/>
+          <ContractCreateButton/>
         </ContainerRow>
 
-        <MileageShopButton /> {/* 수혁 파트 - 마일리지 샵 영역*/}
+        <MileageShopButton/> {/* 수혁 파트 - 마일리지 샵 영역*/}
 
       </MainContainer>
     </MainBackground>
