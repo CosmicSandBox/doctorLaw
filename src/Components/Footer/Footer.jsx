@@ -1,5 +1,4 @@
 import { styled } from 'styled-components';
-import ContainerCenter from '../Container/ContainerCenter';
 import ContainerColumn from '../Container/ContainerColumn';
 import ContainerRow from '../Container/ContainerRow';
 
@@ -12,7 +11,7 @@ const FooterContainer = styled.footer`
     color: white;
 `;
 
-const One_of_three = styled.div`
+const OneOfThree = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,27 +42,22 @@ const Sizedbox = styled.div`
     height: 20px;
 `
 
-const Row_for_insta = styled.div`
+const RowForInsta = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: start;
 `
 
-const StyledLink = styled.a`
-    color: white;
-    text-decoration: none;
-`;
-
 export default function Component() {
     return (
         <FooterContainer>
-            <One_of_three>
+            <OneOfThree>
                 <Logo>
                     <img src="img/로고.svg" alt="로고" />
                 </Logo>
-            </One_of_three>
-            <One_of_three>
+            </OneOfThree>
+            <OneOfThree>
                 <ContainerColumn>
                     <p style={{ fontWeight: 'bold' }}>COMPANY</p>
                     <Sizedbox />
@@ -72,18 +66,18 @@ export default function Component() {
                     <Sizedbox />
                     <p>대표: 이수혁</p>
                 </ContainerColumn>
-            </One_of_three>
-            <One_of_three>
+            </OneOfThree>
+            <OneOfThree>
                 <ContainerColumn>
                     <p style={{ fontWeight: 'bold' }}>CONTACT US</p>
                     <Sizedbox />
-                    <Row_for_insta gap='10px'>
+                    <RowForInsta gap='10px'>
                         <Icon>
                             <img src="img/icon_insta.svg" alt="로고" />
                         </Icon>
                         <Sizedbox />
                         <p>DrLaw.Official</p>
-                    </Row_for_insta>
+                    </RowForInsta>
                     <Sizedbox />
                     <ContainerRow>
                         <Icon>
@@ -93,7 +87,7 @@ export default function Component() {
                         <p>xxxxxxxxx@gmail.com</p>
                     </ContainerRow>
                 </ContainerColumn>
-            </One_of_three>
+            </OneOfThree>
         </FooterContainer>
     );
 };
