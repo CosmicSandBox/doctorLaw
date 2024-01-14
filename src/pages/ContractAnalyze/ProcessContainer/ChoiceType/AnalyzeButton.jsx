@@ -12,17 +12,8 @@ const ButtonContainer = styled.div`
     cursor: pointer;
 `;
 
-const TextH1 = styled.h1`
-    font-family: "LINE-Bd";
-    font-size: 1.5rem;
-    color = ${props => props.$color};
-`;
-
-export default function Component(){
+export default function Component({$onClick, children}){
     return(
-        <ButtonContainer>
-            <TextH1 $color="white"> 분석 시작하기</TextH1>
-            <TextH1 $color="white"> {"<"}이용권 1회 차감{">"} </TextH1>
-        </ButtonContainer>
+        <ButtonContainer onClick={$onClick}>{children}</ButtonContainer>
     )
 }

@@ -24,6 +24,7 @@ const StyledLabel = styled.label`
     display: flex;
     flex-direction: column;
     align-items:center;
+    cursor: pointer;
     gap:10px;
 `
 

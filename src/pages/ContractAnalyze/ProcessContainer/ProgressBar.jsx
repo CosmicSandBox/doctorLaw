@@ -83,7 +83,7 @@ export default function Component({ riskValue }) {
                 <ProgressBarWrapper>
                     <ProgColumn>
                         <PositionMarker riskValue='20'>
-                            <PositionImage src="img/risk_percent.svg" alt="위치" />
+                            <PositionImage src="/img/risk_percent.svg" alt="위치" />
                         </PositionMarker>
                         <ProgressBarContainer>
                             <ProgressBarFiller />

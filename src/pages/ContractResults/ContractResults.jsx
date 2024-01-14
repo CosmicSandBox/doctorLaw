@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 import { Outlet } from "react-router-dom";
 import ContainerColumn from "../../Components/Container/ContainerColumn";
-import HowItGoes from "./HowItGoes";
+import HowItGoes from "./SelectResults/HowItGoes";
 import AdMileageShop from "./AdMileageShop";
 import MileageShopButton from "../MainPage/Buttons/MileageShopButton";
 

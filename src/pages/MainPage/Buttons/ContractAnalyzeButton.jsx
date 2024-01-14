@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 const ButtonContainer = styled.div`
@@ -46,8 +47,10 @@ const ShortcutButton = styled.button`
 
     background: ${props => props.$background};
     color: white;
+    cursor: pointer;
 `
 export default function Component() {
+    const navigate = useNavigate();
 
     return (
         <ButtonContainer>
@@ -56,8 +59,8 @@ export default function Component() {
                 <TextDescription>위험한 조항이 있는지 확인하고 내용을 이해하기 쉽게 요약해요</TextDescription>
             </TextContainer>
             <ShortcutContainer>
-                <ShortcutButton $background="black">계약 내용 분석 바로가기</ShortcutButton>
-                <ShortcutButton $background="#F48553">내 분석 기록 확인하기</ShortcutButton>
+                <ShortcutButton $background="black" onClick={() => navigate("/analyze")}>계약 내용 분석 바로가기</ShortcutButton>
+                <ShortcutButton $background="#F48553" onClick={() => navigate("/results")}>내 분석 기록 확인하기</ShortcutButton>
             </ShortcutContainer>
         </ButtonContainer>
     )

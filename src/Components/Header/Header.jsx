@@ -43,7 +43,7 @@ export default function Component() {
         <HeaderContainer>
             <Logo>
                 <StyledLink href="/">
-                    <img src="img/로고.svg" alt="로고" />
+                    <img src="/img/로고.svg" alt="로고" />
                 </StyledLink>
             </Logo>
             <MenuContainer>

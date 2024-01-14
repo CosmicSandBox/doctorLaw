@@ -47,6 +47,8 @@ const RowForInsta = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: start;
+
+    gap: ${props => props.$gap};
 `
 
 export default function Component() {
@@ -71,7 +73,7 @@ export default function Component() {
                 <ContainerColumn>
                     <p style={{ fontWeight: 'bold' }}>CONTACT US</p>
                     <Sizedbox />
-                    <RowForInsta gap='10px'>
+                    <RowForInsta $gap='10px'>
                         <Icon>
                             <img src="img/icon_insta.svg" alt="로고" />
                         </Icon>
