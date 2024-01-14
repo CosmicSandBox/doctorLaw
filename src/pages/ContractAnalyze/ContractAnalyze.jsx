@@ -12,14 +12,14 @@ const NoticeContainer = styled.div`
 `;
 
 export default function Component() {
-    return (
-        <ContainerColumn>
-            <ChoiceType />
-            <NoticeContainer>
-                <HowItGoes />
-                <AdMileageShop />
-                <MileageShopButton $width="none" />
-            </NoticeContainer>
-        </ContainerColumn>
-    );
-}
+  return (
+    <ContainerColumn>
+      <ChoiceType/>
+      <NoticeContainer>
+        <HowItGoes/>
+        <AdMileageShop/>
+        <MileageShopButton $width="none"/>
+      </NoticeContainer>
+    </ContainerColumn>
+  );
+};
