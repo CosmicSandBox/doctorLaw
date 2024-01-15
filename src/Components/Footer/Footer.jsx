@@ -56,7 +56,7 @@ export default function Component() {
         <FooterContainer>
             <OneOfThree>
                 <Logo>
-                    <img src="img/로고.svg" alt="로고" />
+                    <img src="/img/로고.svg" alt="로고" />
                 </Logo>
             </OneOfThree>
             <OneOfThree>
@@ -75,7 +75,7 @@ export default function Component() {
                     <Sizedbox />
                     <RowForInsta $gap='10px'>
                         <Icon>
-                            <img src="img/icon_insta.svg" alt="로고" />
+                            <img src="/img/icon_insta.svg" alt="로고" />
                         </Icon>
                         <Sizedbox />
                         <p>DrLaw.Official</p>
@@ -83,7 +83,7 @@ export default function Component() {
                     <Sizedbox />
                     <ContainerRow>
                         <Icon>
-                            <img src="img/icon_email.svg" alt="로고" />
+                            <img src="/img/icon_email.svg" alt="로고" />
                         </Icon>
                         <Sizedbox />
                         <p>xxxxxxxxx@gmail.com</p>

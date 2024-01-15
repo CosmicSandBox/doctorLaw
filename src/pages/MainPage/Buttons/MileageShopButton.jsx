@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 const ButtonContainer = styled.div`
@@ -7,6 +8,7 @@ const ButtonContainer = styled.div`
     background: #122033;
     border-radius: 20px;
     padding: 1.5rem;
+    cursor: pointer;
     color: white;
 `
 const TextHeader = styled.h1`
@@ -31,9 +33,10 @@ const Image = styled.img`
 `
 
 export default function Component({$width}) {
+    const navigate = useNavigate();
 
     return (
-        <ButtonContainer $width={$width}>
+        <ButtonContainer $width={$width} onClick={() => navigate('/shop')}>
             <TextHeader>마일리지 쇼핑하러 가기</TextHeader>
             <ShortcutContainer>
                 <Image src="/img/coins.png"/>

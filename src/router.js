@@ -10,6 +10,12 @@ import ContractResults from './pages/ContractResults/ContractResults';
 import SelectResults from './pages/ContractResults/SelectResults/SelectResults';
 import ShowResult from './pages/ContractResults/ShowResult/ShowResult';
 
+import ContractCreate from './pages/ContractCreate/ContractCreate';
+
+import MileageCharge from './pages/MileageShop/MileageCharge/MileageCharge';
+import MileageUse from './pages/MileageShop/MileageUse/MileageUse';
+import MileageLogs from './pages/MileageShop/MileageLogs/MileageLogs';
+
 export default createBrowserRouter([
     {
         path: "/",
@@ -45,6 +51,27 @@ export default createBrowserRouter([
                         path: "file/:dataIndex",
                         element: <ShowResult />
                     },
+                ]
+            },
+            {
+                path: "create",
+                element: <ContractCreate />
+            },
+            {
+                path: "shop",
+                children: [
+                    {
+                        path: "",
+                        element: <MileageLogs />
+                    },
+                    {
+                        path: "charge",
+                        element: <MileageCharge />
+                    },
+                    {
+                        path: "use",
+                        element: <MileageUse />
+                    }
                 ]
             }
         ]
