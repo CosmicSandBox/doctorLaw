@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import ContainerColumn from '../../../Components/Container/ContainerColumn';
 import ContainerRow from '../../../Components/Container/ContainerRow';
+import ContainerCenter from '../../../Components/Container/ContainerCenter';
 
 const FreeTypeContainer = styled.div`
     position: relative;
@@ -24,7 +25,13 @@ const ContainerCard = styled(ContainerRow)`
     justify-content: center;
     gap: 30px;
 `
-
+const Containermulti = styled.div`
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+`;
 
 const TextHeader = styled.h1`
     font-family: LINE-Bd;
@@ -32,8 +39,13 @@ const TextHeader = styled.h1`
 `
 const TextFreeHeader = styled.h1`
     font-family: LINE-Bd;
+    font-size: 2.5rem;
+`
+const TextMoney = styled.h1`
+    font-family: LINE-Bd;
     font-size: 1.5rem;
 `
+
 const TextFreeDescription = styled.h1`
     font-family: LINE-Rg;
     font-size: 1rem;
@@ -64,8 +76,12 @@ const CardImg = styled.img`
     object-fit: cover;
     width: 70px;
 `
-export default function Comopnent(){
-    return(
+const CardImgContainer = styled(ContainerCenter)`
+    margin-left: 30px;
+`
+
+export default function Comopnent() {
+    return (
         <FreeMileageContainer>
             <TextHeader>이용권 구매하기</TextHeader>
 
@@ -73,28 +89,36 @@ export default function Comopnent(){
                 <FreeTypeHeader>
                     <TextFreeHeader>AI 1회 이용권</TextFreeHeader>
                     <ContainerCard>
-                        <CardImg src="/img/coins.png"/>
-                        <TextFreeHeader> X1 </TextFreeHeader>
+                        <CardImgContainer>
+                            <CardImg src="/img/icon_ticket.svg" />
+                        </CardImgContainer>
+                        <Containermulti>
+                            <TextFreeHeader> X1 </TextFreeHeader>
+                        </Containermulti>
                     </ContainerCard>
                 </FreeTypeHeader>
 
                 <NavButton $background="#122033">
-                    <TextFreeHeader>1,000P</TextFreeHeader>
+                    <TextMoney>1,000P</TextMoney>
                     <TextFreeDescription $color="white"> 사용</TextFreeDescription>
                 </NavButton>
             </FreeTypeContainer>
-            
+
             <FreeTypeContainer $background="#D6E4F7">
                 <FreeTypeHeader>
                     <TextFreeHeader>AI 5회 이용권</TextFreeHeader>
                     <ContainerCard>
-                        <CardImg src="/img/coins.png"/>
-                        <TextFreeHeader> X5 </TextFreeHeader>
+                        <CardImgContainer>
+                            <CardImg src="/img/icon_ticket.svg" />
+                        </CardImgContainer>
+                        <Containermulti>
+                            <TextFreeHeader> X5 </TextFreeHeader>
+                        </Containermulti>
                     </ContainerCard>
                 </FreeTypeHeader>
 
                 <NavButton $background="#122033">
-                    <TextFreeHeader>4,000P</TextFreeHeader>
+                    <TextMoney>4,000P</TextMoney>
                     <TextFreeDescription $color="white"> 사용</TextFreeDescription>
                 </NavButton>
             </FreeTypeContainer>
