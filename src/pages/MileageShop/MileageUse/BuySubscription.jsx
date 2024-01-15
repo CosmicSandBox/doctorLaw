@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import ContainerColumn from '../../../Components/Container/ContainerColumn';
-import ContainerRow from '../../../Components/Container/ContainerRow';
 
 const FreeTypeContainer = styled.div`
     position: relative;
@@ -19,10 +18,6 @@ const FreeTypeHeader = styled(ContainerColumn)`
     gap: 1rem;
 `
 const FreeMileageContainer = styled(ContainerColumn)`
-`
-const ContainerCard = styled(ContainerRow)`
-    justify-content: center;
-    gap: 30px;
 `
 
 
@@ -64,10 +59,6 @@ const NavButton = styled.button`
     color: white;
 
     background: ${props => props.$background};
-`
-const CardImg = styled.img`
-    object-fit: cover;
-    width: 70px;
 `
 export default function Comopnent() {
     return (
