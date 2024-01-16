@@ -21,7 +21,7 @@ const GridContainer = styled.div`
 `;
 
 
-function GridButton({$img, children}){
+function GridButton({$img, children, imageSize}){
     const Button = styled.button`
         display: flex;
         flex-direction: column;
@@ -41,8 +41,8 @@ function GridButton({$img, children}){
         font-size: 2rem;
     `
     const Image = styled.img`
-        height: 50px;
-    `
+        height: ${imageSize || '50px'}; /* imageSize가 없을 경우 기본값으로 50px 설정 */
+    `;
 
 
     return(
@@ -61,7 +61,7 @@ export default function Comopnent(){
                 <GridButton $img="/img/charge/신용카드.png">신용카드</GridButton>
                 <GridButton $img="/img/charge/휴대폰.png">휴대폰</GridButton>
                 <GridButton $img="/img/charge/무통장입금.png" >무통장입금</GridButton>
-                <GridButton $img="/img/charge/toss_logo.svg">toss pay</GridButton>
+                <GridButton $img="/img/charge/토스페이.svg">toss pay</GridButton>
                 <GridButton $img="/img/charge/네이버페이2.png">네이버페이</GridButton>
                 <GridButton $img="/img/charge/카카오페이!.png" >카카오페이</GridButton>
             </GridContainer>
